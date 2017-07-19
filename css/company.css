@@ -1,0 +1,481 @@
+#company{
+    z-index: 9002;
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(../images/company_bg1.jpg)no-repeat;
+    background-size: 100% 100%;
+    background-position:center;
+    transition: background 2s
+    }
+
+/*cpart1*/
+.cpart1{
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-150px;
+    margin-left:-414px;
+    text-align: center
+    }
+    
+.cpart1>h2{
+    margin:0 auto 30px auto;
+    font-size:35px;
+    font-weight:200;
+    color:#fff;
+    text-shadow:2px 2px 3px rgba(0,0,0,0.5);
+    }
+    
+.cpart1>p{
+    width:700px;
+    margin:0 auto 0px auto;
+    font-size:16px;
+    line-height: 30px;
+    text-shadow:1px 1px 2px rgba(0,0,0,0.8)
+    }
+    
+/*cpart2*/
+.cpart2{
+    z-index:9999;
+    display:none;
+    position: absolute;
+    height:100%;
+    width:100%
+    }
+    
+.cpart2>.scale{
+    width:100%;
+    height: 100%;
+    transform:scale(0.2);
+    transition:2s
+    }
+
+.cpart2text{
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-440px;
+    margin-top:-110px
+    }
+    
+.cbigtitle>li{
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-230px;
+    opacity:0; 
+    transition:1.5s
+    }
+
+.cbigtitle>li.on{opacity:1}
+
+.cbigtitle>li:first-child{margin-left:-691px}
+
+.cbigtitle>li:nth-child(2){margin-left:-698px}
+
+.cbigtitle>li:nth-child(3){
+    margin-left:-534px;
+    margin-top:-360px
+    }
+    
+.cbigtitle>li:last-child{margin-left:-519px}
+
+.cmtitle{margin-bottom:180px}
+
+.cmtitle:after{
+    display:block;
+    clear: both;
+    content:""
+    }
+    
+.cmtitle>li{
+    float:left;
+    margin-right:160px 
+    }
+
+.cmtitle>li>a{position:relative}
+
+.cmtitle>li:after{
+    display:block;
+    position:absolute;
+    width:165px;
+    height:2px;
+    margin-top:100px;
+    background:#111;
+    opacity:0;
+    transition: 1s;
+    content:""
+}
+
+.cmtitle>li.on:after{
+    height:4px;
+    margin-top:2px;
+    background:#fff;
+    opacity:1
+    }
+
+.cmtitle>li:last-child{margin-right:0px}
+
+.cmtitle>li>a{
+    font-size:30px;
+    color:#fff;
+    text-shadow:2px 2px 5px rgba(0,0,0,0.5)
+    }
+
+.cmtitle>li:hover>a{
+    color:#8feb7d;
+    text-decoration:none   
+    }
+
+.cborder{
+    position:absolute;
+    top:50%;
+    height:5px;
+    width:165px;
+    background:#fff
+    }
+
+.cmtext>li{display:none}
+
+.cmtext h3{
+    margin-bottom:7px;
+    color:#8feb7d;
+    font-size:18px;
+    font-weight:500;
+    text-shadow:2px 2px 5px rgba(0,0,0,0.4)
+    }
+    
+.cmtext p{line-height: 30px; font-size: 15px; width:950px; text-shadow: 1px 1px 2px rgba(0,0,0,0.8)}
+
+.spirit, .format, .corevalue{display: none}
+
+/*cpart3*/
+.cpart3{
+    display:none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-200px 0 0 -436px;
+    }
+
+.cpart3>.scale{
+    width:100%;
+    height:100%;
+    transform:scale(0.2);
+    transition:2s
+    }
+
+.cpart3>.scale>h2{
+    margin-bottom:60px;
+    color:#fff;
+    font-size:27px;
+    font-weight:100;
+    text-shadow:2px 2px 3px rgba(0,0,0,0.5)
+    }
+    
+.cpart3>.scale>p{
+    margin-bottom:10px;
+    line-height:28px;
+    font-size:15px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8)
+    }
+    
+.cpart3>.scale>p:last-child{
+    position:relative;
+    padding-top:10px;
+    font-size:18px;
+    border-top:1px solid #fff
+    }
+
+/*button*/
+#company>button{
+    z-index:9999;
+    position:absolute;
+    top:45%;
+    color:#fff;
+    font-size:30px;
+    background: none;
+    border:none
+    }
+
+#company>.leftbtn{
+    left:5%;
+    display:none
+    }
+
+#company>.rightbtn{right:5%}
+
+@media screen and (max-width:1199px){
+    #company{
+        display: block;
+        background-position: top;
+        background-size: auto 200%;
+        }
+    
+    .cpart1{
+        top:27.68%;
+        left:0%;
+        margin:0;
+        }
+    
+    .cpart1>h2{
+        width:70%;
+        margin-bottom: 5vw;
+        font-size: 4.5vw;
+        text-align: left;
+        }
+    
+    .cpart1>p{
+        width:70%;
+        margin-bottom: 3vw;
+        line-height: 4vw;
+        font-size: 2.2vw;
+        text-align: left
+        }
+    
+    .cpart2>.scale{
+        transform: none
+        }
+    
+    .cbigtitle>li{
+        top:0;
+        left:0%;
+        }
+    
+    .cbigtitle>li>img{
+        height: 17vw
+        }
+    
+    .cbigtitle>li:nth-child(3)>img{
+        height: 31vw
+        }
+    
+    .cbigtitle>li:first-child{
+        top:29.5%;
+        left:8.66%;
+        margin:0
+        }
+    
+    .cbigtitle>li:nth-child(2){
+        top:29.5%;
+        left:8.268%;
+        margin:0
+        }
+    
+    .cbigtitle>li:last-child{
+        width:80%;
+        top:29.5%;
+        left:18.94%;
+        margin:0
+        }
+    
+    .cbigtitle>li:nth-child(3){
+        top:22.1%;
+        left:23.3%;
+        width:80%;
+        margin:0
+        }
+    
+    .cpart2text{
+        top:33%
+        left:14%;
+        width:73%;
+        margin:0 auto;
+        }
+    
+    .cmtitle{
+        margin-bottom:12vw
+        }
+        
+    .cmtitle>li{
+        margin-right:8vw;
+        }
+        
+    .cmtitle>li>a{
+        font-size:3.5vw
+        }
+    
+    .cmtitle>li:after{
+        position:inherit;
+        width:100%;
+        height:3px;
+        margin:0;
+        }
+    
+    .cmtitle>li.on:after{
+        height:3px
+        }
+        
+    .cmtext h3{
+        margin-bottom:5px;
+        margin-top:10px;
+        width:100%;
+        font-size:2.5vw;
+        font-weight:bold
+        }
+        
+    .cmtext p{
+        width:100%;
+        line-height:3.6vw ;
+        font-size:2.2vw;
+        text-shadow:1px 1px 2px rgba(0,0,0,0.8)
+        }
+        
+	#company>button{
+		top:92%;
+		padding:10px;
+		font-size:3vw
+	    }
+        
+	.cpart3{
+        top:25%;
+        left:10%;
+        margin:0;
+        width:100%
+	    }
+        
+	.cpart3>.scale{
+		transform:none
+	    }
+        
+	.cpart3>.scale>h2{
+        margin-bottom:4vw;
+		width:80%;
+		font-size:4vw;
+		font-weight:500
+	    }
+        
+	.cpart3>.scale>p{
+        margin-bottom:0;
+		width:80%;
+		line-height:4vw;
+		font-size:2.2vw
+	    }
+        
+    .cpart3>.scale>p:last-child{
+        margin-top:1.5vw;
+        padding-top:1.5vw;
+        font-size:2.6vw
+        }
+}
+
+@media screen and (max-width:767px){
+    #company{
+        background-position:top;
+        background-size:auto 200%;
+        }
+        
+    .cpart1{
+        top:26%
+        }
+        
+    .cpart1>h2{
+        margin-bottom:5vw;
+        width:80%;
+        font-size:5vw
+        }
+        
+    .cpart1>p{
+        margin-bottom:3vw;
+        width:80%;
+        font-size:3.888vw;
+        line-height:6vw
+        }
+        
+    .cbigtitle>li{
+        left:0;
+        top:0;
+        margin:0
+        }
+        
+    .cbigtitle>li>img{
+        height:inherit;
+        width:100%
+        }
+        
+    .cbigtitle>li:nth-child(3)>img{
+        height:inherit
+        }
+        
+    .cbigtitle>li:first-child{
+        top:26.5%;
+        left:0
+        }
+        
+    .cbigtitle>li:nth-child(2){
+        top:26.5%;
+        left:0
+        }
+        
+    .cbigtitle>li:last-child{
+        top:26.5%;
+        left:10%;
+        width:80%
+        }
+        
+    .cbigtitle>li:nth-child(3){
+        width:80%;
+        top:19.1%;
+        left:10%
+        }
+        
+    .cpart2text{
+        width:90%;
+        top:30%;
+        left:5%
+        }
+        
+    .cmtitle{
+        margin-bottom:12vw
+        }
+        
+    .cmtitle>li{
+        margin-right:4.444vw
+        }
+        
+    .cmtitle>li>a{
+        font-size:5.555vw
+        }
+        
+    .cmtext h3{
+        margin-top:2.8vw;
+        margin-bottom: 0px;
+        width:90%;
+        font-size:4.166vw
+        }
+        
+    .cmtext p{
+        width:90%;
+        line-height:5.5555vw ;
+        font-size:3.888vw
+        }
+        
+	#company>button{
+		font-size:5vw
+	    }
+        
+	.cpart3{
+        top:18%;
+		left:5%
+	    }
+        
+	.cpart3>.scale>h2{
+        margin-bottom:10vw;
+		width:90%;
+		font-size:4.5vw
+	    }
+        
+	.cpart3>.scale>p{
+		width:90%;
+        line-height:6vw;
+		font-size:3.8vw
+	    }
+        
+    .cpart3>.scale>p:last-child{
+        margin-top:3vw;
+        padding-top:3vw;
+        font-size:5vw
+        }
+}

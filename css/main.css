@@ -1,0 +1,239 @@
+@charset "utf-8";
+
+@import url(common.css);
+@import url(cinema.css);
+@import url(company.css);
+@import url(servcie.css);
+@import url(contact.css);
+
+html, body { overflow : hidden; }
+	
+
+.blind{text-indent: -9999px}
+
+button{
+    outline: 0
+}
+
+*{font-family: "Malgun Gothic"; color: #fff}
+a, h2, h3{font-family: "Malgun Gothic"}
+
+
+
+/*cCut*/
+/*cCut*/
+.ccut{
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 9999
+}
+
+.ccut>div{
+    position: relative;
+    float:left;
+    width:33.33%;
+    height: 100%;
+    overflow: hidden
+}
+
+.ccut>div>p{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top:0%;
+    left:0%;
+    overflow: hidden;
+    background: #151515;
+    background:rgba(0,0,0,0.9);
+    font-size: 50px;
+    line-height: 960px;
+    line-height:100vh;
+    font-family: "roboto";
+    text-align: center
+}
+
+/*header*/
+/*header*/
+header{width:100%; position: relative}
+
+#head{position: fixed; width:100%; z-index: 9003; }
+
+.head{overflow: hidden; width: 1200px; margin:0 auto; height: 60px}
+
+.head>h1{float: left; padding-top:11px; margin-left:30px;}
+
+.head>.menubtn{float:right; padding-top: 19px; margin-right: 30px}
+
+.menubtn>a{display: block; overflow: hidden; }
+
+.menubtn>a>p{float: left; line-height: 22px; font-size: 12px; margin-right: 12px}
+
+.menubtn>a>div{float: left;}
+
+/*menubtn*/
+
+.menubar>div{height: 22px; width: 2px; background: white; float:left; transform-origin: bottom ; transition: 1s}
+
+.menubar{transition: 1s}
+.menubar_on{margin-top:-2px}
+
+.menuline1{margin-right: 7px;}
+.menubar_on>.menuline1{margin-right: 6px; transform: rotate(45deg)}
+
+.menuline2{margin-right: 7px; opacity: 1}
+.menubar_on>.menuline2{margin-right:6px; margin-top:30px; opacity: 0}
+
+.menuline3{}
+.menubar_on>.menuline3{transform: rotate(-45deg)}
+
+/*menu*/
+.menu{}
+.menu a{color: #fff}
+.menu a:hover, .menu a:focus{color:#8feb7d; text-decoration: none}
+
+/*nav*/
+.menu>nav{overflow: hidden; position: absolute; left:50%; margin-left:-261px; top:0px;margin-top:60px; padding-top:290px; }
+.menu>nav>dl{float:left; margin-right: 90px; margin-top:-150px; opacity: 0}
+
+.menu>nav>dl:last-child{margin-right:0px}
+.menu>nav>dl>dt{margin-bottom: 25px}
+.menu>nav>dl>dt>a{font-size: 30px;}
+.menu>nav>dl>dd{line-height: 30px}
+.menu>nav>dl>dd>a{font-size: 16px}
+
+/*menu footer*/
+.menu>.mfooter{bottom: 15px; left:50%; position: absolute; margin-left:-300px; opacity: 0}
+.menu>.mfooter>.sns{overflow: hidden; width:90px; margin:0 auto;   margin-bottom: 10px  }
+.menu>.mfooter>.sns>li{float:left; margin-right: 15px; }
+.menu>.mfooter>.sns>li:last-child{margin-right: 0px}
+.menu>.mfooter>.sns>li>a{text-indent: -9999px; display: block; width: 20px; height: 20px; }
+
+.menu>.mfooter>.sns>li:first-child>a{background: url(../images/icon_facebook.png)no-repeat 50% 50%}
+.menu>.mfooter>.sns>li:hover:first-child>a{background: url(../images/icon_facebook_hover.png)no-repeat 50% 50%}
+.menu>.mfooter>.sns>li:nth-child(2)>a{background: url(../images/icon_twitter.png)no-repeat 50% 50%}
+.menu>.mfooter>.sns>li:hover:nth-child(2)>a{background: url(../images/icon_twitter_hover.png)no-repeat 50% 50%}
+.menu>.mfooter>.sns>li:last-child>a{background: url(../images/icon_youtube.png)no-repeat 50% 50%}
+.menu>.mfooter>.sns>li:hover:last-child>a{
+	background: url(../images/icon_youtube_hover.png)no-repeat 50% 50%
+}
+
+
+.menu>.mfooter>p{text-align: center; }
+
+
+
+
+/*menubg*/
+.menubg{height: 60px; width: 60px; position:absolute; z-index:-1;   top:0px; left: 75%; border-radius: 100%; transition: 2.5s; top:-30px}
+
+.menubg_on{width:6427px; height: 6427px; left:-3213px;  ;  top:0; background: rgba(0,0,0,0.9); top:-3000px}
+
+/*aside*/
+/*aside*/
+aside{width:290px;  letter-spacing: 1px; position: fixed; right:-250px; top:0; height: 100%; background-color: rgba(0,0,0,0.15); z-index: 9005}
+
+aside>ul{position: absolute; top:50%; margin-top:-80px}
+
+aside>ul>li img{margin-top:8px}
+
+aside>ul>li>a{display: block; overflow: hidden; font-size: 16px; height: 40px; position: relative}
+
+aside>ul>li>a>div{float:left; line-height: 40px}
+
+aside .aleft{
+    width: 40px;
+    text-align: center;
+    transition: 0.5s
+}
+
+aside>ul>li.click .aleft{
+    background: url(../images/nav_icon.png)no-repeat 50% 50%;
+    text-indent: -9999px;
+}
+
+aside .aright{width: 250px;}
+
+aside .aright>p{position: relative; transition: 0.5s}
+
+aside ul>li{position: relative}
+
+aside ul>li:before{content: ""; display: block; width: 100%; height: 40px; position: absolute; top: 0px; right: -100%; background: rgba(0,0,0,0.3); transition: 0.5s}
+
+aside ul>li.click:before{right:0}
+
+aside ul>li.hover:hover:before{right:-40px}
+
+aside .aright>p:first-child{float:left; margin-left:17px;}
+aside .aright>p:last-child{float:right; margin-right: 12px}
+
+@media screen and (max-width:1199px){
+    .head{
+        width:100%
+    }
+    #head{
+        z-index: 9006
+    }
+    aside{
+        background: none
+    }
+    aside>ul{
+        background: rgba(0,0,0,0.15)
+    }
+    aside>ul>li:first-child{
+        display: none
+    }
+    .ccut>div:nth-child(2){
+        width:100%
+    }
+    .ccut>div:first-child, .ccut>div:last-child{
+        width:0%
+    }
+    .ccut>div>p{
+        font-size: 10vw
+    }
+	.menu>nav{
+		left:15.7%;
+		padding-top:43vw;
+		margin:60px 0 0 0
+	}
+	.menu>nav>dl{
+		margin-right: 8vw;
+		text-align: center
+	}
+	.menu>nav>dl>dt{
+		margin-bottom: 2.5vw;
+	}
+	.menu>nav>dl>dt>a{
+		font-size: 3.5vw
+	}
+	.menu>nav>dl>dd>a{
+		font-size: 2.5vw;
+	}
+}
+
+@media screen and (max-width:767px){
+    .ccut>div>p{
+        font-size: 10vw
+    }
+	.menu>nav{
+		left:7.5%;
+		width:85%;
+	}
+	.menu>nav>dl{
+		margin-right: 5vw;
+	}
+	.menu>nav>dl>dt{
+		margin-bottom: 3vw;
+	}
+	.menu>nav>dl>dt>a{
+		font-size: 5vw
+	}
+	.menu>nav>dl>dd>a{
+		font-size: 3.5vw;
+	}
+}
+
+
+

@@ -1,0 +1,107 @@
+#cinema{height: 100%}
+
+.bg>video {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    z-index: -100;
+    background-position: center;
+    object-fit:cover; 
+}
+
+/*cut*/
+.cut{position: absolute; top:0; left:0; z-index: 9000; height: 100%; width:100% }
+.cut_on{z-index: 9004}
+
+.cut>div{ height: 100%; width:200px; box-sizing: border-box;  float:left; border-right: 1px solid #a1a1a1; position: relative; overflow:hidden;}
+
+.cut>div:last-child{border:none}
+
+/*.cut>div:first-child, .cut>div:last-child{width:calc(50% - 600px)}*/
+
+.cut>div:before{content: "";display: block; width:0%; height: 100%; background: #111; position:absolute; top:0; left:0;}
+
+.tline{width:1px ;height: 0px; background: #fff; position: absolute; left:50%; margin-left:-1px; z-index: 9001}
+
+@keyframes cut1{
+    0%{
+        width:0%;
+    }
+    50%{
+        left:0;
+        width:101%;
+    }
+    100%{
+        left:200px;
+    }
+}
+.cut>div>p{
+    position:absolute;
+    top:0;
+    left:0%;
+    width:101%;
+    height:100%;
+    background:#111;
+}
+
+
+/*cinema btn*/
+.cinemabtn{position: absolute; top:50%; left:50%; margin-left:370px; margin-top:-130px;z-index: 9006}
+
+.cinemabtn>a{display: block; width:11px; height: 11px; background: #fff; border-radius: 11px; text-indent: -9999px; margin-bottom: 30px; position: relative;  }
+
+.cinemabtn>a:after{content: ""; display: block; width: 0px; height: 0px; border:2px solid #fff ; border-radius: 23px; position: absolute; top:50%; left:50%; box-sizing: border-box; transition: 0.7s;}
+
+.cinemabtn>a.on:after{width:23px; height: 23px; opacity: 1; left:-6px; top:-6px}
+
+.cinemalist>.listline{width: 30px; height: 1px ;background: #fff; position: absolute; left:50%; top:50%; margin-left:400px; margin-top:-126px; z-index: 9006}
+
+.cinemalist>p{font-size: 13px; position: absolute; left:50%; top:50%; margin-left:407px; margin-top:-123px; z-index: 9006}
+
+
+/*linetext*/
+.linetext{overflow: hidden; transform: rotate(-90deg); position: absolute; top:50%; left:50%; margin-left:-690px; margin-top:200px; z-index: 9003}
+.linetext>p{float: left}
+.linetext>p>a{color: #fff; font-size: 14px; display: block; margin-right: 45px}
+.linetext>p>a:hover{text-decoration: none}
+
+/*ctitle*/
+.ctitle{position: absolute; z-index: 9003; bottom:30px; left:50%; margin-left:-570px;}
+
+.ctitle>div{overflow: hidden;}
+
+.ctitle>div>h2{font-size: 30px ; color:#fff; float:left; font-weight: 500}
+
+.ctitle>div>div{float:left}
+
+.ctitle>div>div>a{display: block; background: url(../images/visual_sound_off.png)no-repeat; height: 24px; width: 20px; text-indent: -9999px; margin-top:4px; margin-left:15px; float:left}
+
+.ctitle>p{margin-top:5px}
+.ctitle>p>a{font-size: 25px; color:#fff}
+.ctitle>p>a:hover{text-decoration: none}
+
+/*sound bar*/
+.soundbar{float: left;  margin-top:3px; margin-left:10px; position: relative; height: 24px}
+.soundbar>div{ width:1px ; margin-right: 4px; background: #fff; position: relative; bottom: -0px; position: absolute; bottom:0 ;left:0; height: 22px}
+
+.sline1{}
+.sline2{ margin-left: 4px}
+.sline3{ margin-left: 8px}
+.sline4{ margin-left: 12px}
+.sline5{ margin-left: 16px}
+
+@media screen and (max-width:1199px){
+	#cinema{
+		display: none;
+	}
+	.bg>video{
+		display: none
+	}
+	.bg>a>img{
+		width: 100%
+	}
+}

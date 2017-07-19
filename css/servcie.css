@@ -1,0 +1,295 @@
+#service{
+	position: absolute;
+    display: none;
+    overflow: hidden;
+	width: 100%;
+	height: 100%
+}
+
+#service>.slider{
+	overflow: hidden;
+	width:333.5%;
+	height: 100%;
+	background: black;
+    transition: 0.5s
+}
+
+#service section{
+	position:relative;
+	float:left;
+	overflow: hidden;
+	width:10%;
+	height: 100%;
+	opacity: 0.25;
+	transition: 0.5s
+}
+
+#service section>a{
+	display: block;
+	width:100%;
+	height: 100%;
+	background-size: 100% 100%;
+	background-position: center;
+	text-indent: -9999px
+}
+
+#service .info{
+	position: absolute;
+	display: none;
+	z-index: 9008;
+	width:100%;
+	height: 100%;
+	top:0;
+	left:0;
+	padding-left: 45px ;
+	background-color: rgba(0,0,0,0.9)
+}
+
+#service .info>.gtitle{
+	margin-top:85px ;
+	font-size: 50px;
+	color:#fff
+}
+
+#service .info>.gcategori{
+	margin:10px 0 15px 0;
+	font-size: 50px;
+	font-weight: 500
+}
+
+#service .info>.ginfo{
+	width: 61%;
+	margin-bottom: 25px;
+	font-size: 14px;
+	line-height: 25px
+}
+
+#service .info>.strength>li{
+	width:61%;
+	padding-left: 15px;
+	background: url(../images/service_liststyle_path.png)no-repeat 0% 12px;
+	background-size: 7px ;
+	font-size: 14px;
+	line-height: 30px
+}
+
+#service .info>.strength>li>span{
+	display: block;
+	margin-bottom: 7px
+}
+
+#service .info>.gtarget{
+	position: absolute;
+	left:45px;
+	bottom: 45px
+}
+
+.insite, .viewvideo{
+	display:block ;
+	padding:0 0 3px 0;
+	border-bottom: 1px solid #fff;
+	font-size: 15px;
+	color: #fff
+}
+
+.insite:hover, .viewvideo:hover{
+	color: #8feb7d;
+	text-decoration: none
+}
+
+.insite{
+	width:85px;
+	margin-bottom: 10px
+}
+
+.viewvideo{
+	width:122px
+}
+.info>.exit{
+    position: absolute;
+    top:15px;
+    right:65px
+}
+
+.info>.exit>a{
+    display: block;
+    width: 25px;
+    height: 25px;
+    text-indent: -9999px;
+    color:#fff;
+    background:url(../images/icon_exit.png)no-repeat 50% 50%;
+    background-size:100% 100%
+}
+
+.gametag{
+	position: absolute;
+	bottom: 0;
+	right: 0
+}
+
+
+#service section:first-child>a{
+	background-image: url(../images/service-lineage.jpg)
+}
+
+#service section:nth-child(2)>a{
+	background-image: url(../images/service-lineage2.jpg)
+}
+
+#service section:nth-child(3)>a{
+	background-image: url(../images/service-bladesoul.jpg)
+}
+
+#service section:nth-child(4)>a{
+	background-image: url(../images/service-aion.jpg)
+}
+
+#service section:nth-child(5)>a{
+	background-image: url(../images/service-lineage-eternal.jpg)
+}
+
+#service section:nth-child(6)>a{
+	background-image: url(../images/service-mxm.jpg)
+}
+
+#service section:nth-child(7)>a{
+	background-image: url(../images/service-lovebeat.jpg)
+}
+
+#service section:nth-child(8)>a{
+	background-image: url(../images/service-finalblade.jpg)
+}
+
+#service section:nth-child(9)>a{
+	background-image: url(../images/service-lineage-red-knights.jpg)
+}
+
+#service section:last-child>a{
+	background-image: url(../images/service-h2.jpg)
+}
+
+#service>button{
+	position: absolute;
+	top:45%;
+	width:65px;
+	height: 32px;
+	z-index:9002;
+	text-indent: -9999px;
+	border:none
+}
+
+#service>.sleftbtn{
+    display: none;
+	left:29%;
+	background: url(../images/service_prevbtn.png)
+	}
+    
+#service>.srightbtn{
+	right:29%;
+	background: url(../images/service_nextbtn.png)
+}
+
+@media screen and (max-width:1199px){
+    #service section{
+        opacity: 1
+    }
+    
+    #service section>a{
+        background-size: cover;
+    }
+    
+    #service>.slider{
+        width:1000%;
+    }
+    #service .info{
+        padding-left:5%;
+    }
+    
+    #service .info>.gtitle{
+        margin-top:5vw;
+        font-size:8vw;;
+        
+    }
+    #service .info>.gcategori{
+        font-size: 6.8vw;
+        margin:0;
+        margin-bottom: 1.5vw
+    }
+    #service .info>.ginfo{
+        width:60%;
+        margin-bottom: 2.5vw;
+        font-size: 2.2vw;
+        line-height: 4vw
+    }
+    #service .info>.strength>li{
+        width:60%;
+        font-size: 2.2vw;
+        line-height: 4vw;
+    }
+    #service .info>.gtarget{
+        left:5vw;
+        bottom:5vw
+    }
+    #service>button{
+     top:46.5%
+    }
+    #service>.sleftbtn{
+        left:7%
+    }
+    #service>.srightbtn{
+        right:7%
+    }
+    .info>.exit{
+        top:7vw
+    }
+    .info>.exit>a{
+        width:3vw;
+        height:3vw;
+        
+    }
+}
+
+@media screen and (max-width:767px){        
+    #service .info>.gtitle{
+        margin-top:5vw;
+        font-size:10vw;
+    }
+    
+    #service .info>.gcategori{
+        font-size: 9vw;
+    }
+    
+    #service .info>.ginfo{
+        width:90%;
+        font-size: 3.5vw;
+        line-height: 6vw
+    }
+    #service .info>.strength>li{
+        width:90%;
+        font-size: 3.5vw;
+        line-height: 6.5vw;
+        background: none;
+        list-style:outside;
+        padding-left:0
+    }
+    
+    #service>button{
+     top:27%
+    }
+    
+    #service>.sleftbtn{
+        left:5%
+    }
+    
+    #service>.srightbtn{
+        right:5%
+    }
+    
+    .info>.exit>a{
+        width:5vw;
+        height:5vw;
+    }
+}
+
+
+

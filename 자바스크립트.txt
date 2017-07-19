@@ -1,0 +1,31 @@
+https://tympanus.net/Development/ScatteredPolaroidsGallery/
+https://tympanus.net/Development/ArrowNavigationStyles/
+https://tympanus.net/Development/HoverEffectIdeas/
+https://tympanus.net/Development/TextStylesHoverEffects/
+https://tympanus.net/Development/DistortedButtonEffects/
+https://tympanus.net/Development/LineMenuStyles/
+https://tympanus.net/Development/RainEffect/index3.html
+https://tympanus.net/Development/ElasticSVGElements/collapseexpand.html   메뉴
+https://tympanus.net/Development/OffCanvasMenuEffects/index.html 메뉴
+https://tympanus.net/Development/SimpleDropDownEffects/index6.html 드랍다운 메뉴
+https://tympanus.net/Tutorials/FlexibleSlideToTopAccordion/ 모바일 메뉴 클릭
+https://tympanus.net/Development/TabStylesInspiration/  탭스타일
+https://tympanus.net/Development/ButtonStylesInspiration/ 버튼 호버 스타일
+https://tympanus.net/Development/TextInputEffects/index2.html 검색 스타일
+https://tympanus.net/Development/AnimatedHeaderBackgrounds/index4.html 백그라운드 애니메이션
+https://tympanus.net/Tutorials/CSS3FullscreenSlideshow/index3.html 백그라운드 애니메이션
+https://tympanus.net/Development/NavigationIndicators/ 체크버튼 디자인
+
+https://tympanus.net/Development/ArticleIntroEffects/index5.html 서브페이지
+https://tympanus.net/Development/StackEffects/ 사진 이펙트
+https://tympanus.net/Development/ImageTransitions/index6.html 슬라이더
+https://tympanus.net/Development/Slicebox/index2.html 슬라이더
+https://tympanus.net/Development/SlidingBackgroundImageMenu/example8.html 슬라이딩 백그라운
+https://tympanus.net/Tutorials/FourBoxes/index2.html 슬라이더
+https://tympanus.net/Development/ItemTransitions/index2.html 최고 슬라이더
+
+
+
+
+http://radioaktivefilm.com/
+http://www.legworkstudio.com/home/recognition
